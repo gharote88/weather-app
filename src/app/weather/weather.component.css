@@ -1,0 +1,12 @@
+
+.border-0 {
+    border: 0 !important;
+}
+
+.shadow {
+    box-shadow: 0 0 0.625rem -0.1875rem rgb(0 0 0 / 13%) !important;
+}
+
+div.card.shadow:hover {
+    box-shadow: 0 0 0.625rem 0.8125rem rgb(0 0 0 / 13%) !important;
+}

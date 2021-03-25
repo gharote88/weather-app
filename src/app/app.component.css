@@ -1,0 +1,35 @@
+.bd-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+    background-color: #563d7c;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 10%);
+}
+
+.fs-sm {
+    font-size: .875rem !important;
+}
+
+.opacity-50 {
+    opacity: .5 !important;
+}
+
+.me-1 {
+    margin-right: .25rem !important;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.nav-link-style {
+    display: inline-block;
+    transition: color 0.25s ease-in-out,background-color 0.25s ease-in-out,box-shadow 0.25s ease-in-out,border-color 0.25s ease-in-out;
+    color: #5a5b75;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-link-style.nav-link-light {
+    color: rgba(255,255,255,0.7);
+}

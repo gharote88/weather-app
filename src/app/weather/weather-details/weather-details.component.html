@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="card shadow border-0">
+          <img class="card-img-top"
+            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+            alt="Thumbnail [100%x225]" style="height: 500px; width: 100%; display: block;"
+            src="../../../assets/images/{{city}}.jpg" data-holder-rendered="true">
+          <div class="card-body" style="height: 20.5rem;">
+            <div class="text-center p-1 text-secondary">
+              <h4 class="card-title">{{city}}</h4>
+                <div>
+                    <table style="width: 100%; text-align: center">
+                        <thead></thead>
+                        <tbody>
+                            <tr>
+                                <td *ngFor="let forecast of forecasts" class="p-3 border rounded">
+                                    <div class="m-3">{{ forecast.dt_txt|date:'fullDate' }} {{ forecast.dt_txt|date:'shortTime' }}</div>
+                                    <div>Temperature: {{ forecast.main.temp }}&#x2103;</div>
+                                    <div>Sea Level: {{ forecast.main.sea_level }}</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            <div class="justify-content-between align-items-center mt-3">
+              <div class="btn-group">
+                <a routerLink="/" class="btn btn-sm btn-outline-secondary" style="padding: 0.5rem 2rem;">Back</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
